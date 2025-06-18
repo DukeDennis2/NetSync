@@ -1,0 +1,33 @@
+﻿@model aspnetproject.Pages.IndexModel
+
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NetSync</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Other links like fonts or icons -->
+</head>
+
+<title>@ViewData["Title"] - NetSync</title>
+
+
+<div class="text-center">
+    <h1 class="display-4">Your network ignites growth, NetSync powers your path forward.</h1>
+    <h2>Connect with mentors, schedule sessions easily, and unlock your potential.</h2>
+
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <!-- Button to schedule appointment -->
+    <p>
+        <Button asp-controller="Appointment" asp-action="MentorSelection" class="btn btn-primary">
+            Schedule an Appointment
+        </Button>
+    </p>
+
+    <p>Don't have an account with us yet? <a asp-controller="Account" asp-action="Register">Click here to get started</a>.</p>
+</div>

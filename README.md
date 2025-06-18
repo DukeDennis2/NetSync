@@ -15,6 +15,11 @@ A brief description of your project and what it does.
 - Database: MongoDB
 - Other: Firebase, Chart.js, etc.
 
+## Running the website
+   dotnet clean
+   dotnet build
+   dotnet run
+
 ## 📦 Installation
 
 1. Clone the repo:

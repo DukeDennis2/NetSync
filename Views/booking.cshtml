@@ -1,0 +1,35 @@
+@* booking.cshtml *@
+@{
+    ViewData["Title"] = "Book Appointment";
+}
+
+<div class="form-container">
+    <h2>Book an Appointment</h2>
+    <form asp-controller="Appointment" asp-action="Book" method="post">
+        <div class="form-group">
+            <label for="Mentor">Select Mentor</label>
+            <select id="Mentor" name="Mentor" class="form-control">
+                <option value="">-- Choose Mentor --</option>
+                <option value="mentor1">Mentor One</option>
+                <option value="mentor2">Mentor Two</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Date">Date</label>
+            <input type="date" id="Date" name="Date" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Time">Time</label>
+            <input type="time" id="Time" name="Time" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="Notes">Notes (Optional)</label>
+            <textarea id="Notes" name="Notes" class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Book Now</button>
+    </form>
+</div>

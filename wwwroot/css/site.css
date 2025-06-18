@@ -1,31 +1,73 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
 body {
-  margin-bottom: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* Deep black */
+  color: #f1f1f1; /* Light text */
+  margin: 0;
+  padding: 0;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+/* Centered content block */
+.text-center {
+  max-width: 700px;
+  margin: 8vh auto;
+  padding: 2rem;
+  background-color: #1e1e1e; /* Space grey background */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+/* Main headline */
+.text-center h1.display-4 {
+  font-weight: 600;
+  font-size: 2.6rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+/* Subheadline */
+.text-center h2 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #cccccc;
+}
+
+/* Paragraphs */
+.text-center p {
+  font-size: 1.1rem;
+  margin-bottom: 1.4rem;
+  color: #aaaaaa;
+}
+
+/* Links */
+.text-center a {
+  color: #66ccff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+  color: #3399ff;
+  text-decoration: underline;
+}
+
+/* Primary button */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #1a73e8; /* Google-like blue */
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(26, 115, 232, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #125bd4;
+  box-shadow: 0 6px 15px rgba(26, 115, 232, 0.6);
 }
